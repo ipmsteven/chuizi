@@ -1,5 +1,6 @@
 require "chuizi/version"
 require "chuizi/routing"
+require "chuizi/controller"
 
 module Chuizi
   class Application
@@ -16,11 +17,4 @@ module Chuizi
     end
   end
 
-  class Controller
-    attr_reader :env
-
-    def initialize(env)
-      @env = env
-    end
-  end
 end
